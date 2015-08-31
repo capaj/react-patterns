@@ -162,7 +162,7 @@ Wrap props on newlines for exactly 2 or more.
 
 ## Computed Props
 
-Name computed prop methods with the `get` prefix.
+Name computed prop methods with the get prefix. In case you are running in ES5 compatible environments(IE9 and up), use ES5 getters.
 
 ```javascript
   // bad
@@ -172,6 +172,11 @@ Name computed prop methods with the `get` prefix.
 
   // good
   getFullName() {
+    return `${this.props.firstName} ${this.props.lastname}`;
+  }
+  
+  //good as defined with ES5
+  get fullName() {
     return `${this.props.firstName} ${this.props.lastname}`;
   }
 ```
