@@ -162,7 +162,7 @@ Wrap props on newlines for exactly 2 or more.
 
 ## Computed Props
 
-Name computed prop methods with the get prefix. In case you are running in ES5 compatible environments(IE9 and up), use ES5 getters.
+Name computed prop methods with the `get` prefix. In case you are running in ES5 compatible environments(IE9 and up), use ES5 getters.
 
 ```javascript
   // bad
